@@ -5,6 +5,8 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+  api.versionsFrom('1.0');
+  
   api.use('oauth1', ['client', 'server']);
   api.use('oauth', ['client', 'server']);
   api.use('http', ['server']);
